@@ -1,4 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,900i');
+
+
+
 /*header*/
+
 
 nav ul
 {
@@ -31,6 +37,12 @@ li:hover
 	color:#0065FC;
 	border-top: solid;
 	border-color:#0065FC;
+}
+
+
+a
+{
+	text-decoration:none;
 }
 
 
@@ -143,15 +155,15 @@ button
 	margin-right: 30px;
 	margin-top: 20px;
 	border: solid;
-	border-width: 2px;
+	border-width:1px;
 	border-color: #F2F2F2;
 	border-radius: 20px;
 	align-items:center;
-	font-weight: bold;
-	border-left: none;
+	font-weight:bold;
+	border-left:none;
 	padding-right:8px;
-	padding-top:4px;
-	padding-bottom: 4px;
+	padding-top:1px;
+	padding-bottom:1px;
 	transition:all 400ms;
 }
 
@@ -160,7 +172,7 @@ button
 	background-color:#DEEBFF;
 	border:solid;
 	border-color:#0065FC;
-	border-width: 2px;
+	border-width:2px;
 }
 
 
@@ -169,11 +181,11 @@ button
 	border:transparent;
 	border-color:#0065FC;
 	color:#0065FC;
-	border-radius: 50px;
-	padding: 10px;
+	border-radius:40px;
+	padding:10px;
 	background-color:#DEEBFF;
-	margin-right: 8px;
-	font-size: 15px;
+	margin-right:8px;
+	font-size:15px;
 }
 
 
@@ -182,7 +194,7 @@ button
 	border:transparent;
 	border-color:#0065FC;
 	color:#0065FC;
-	border-radius: 50px;
+	border-radius: 40px;
 	padding-right: 10px;
 	padding-left: 10px;
 	padding-top: 7px;
@@ -198,7 +210,7 @@ button
 	border:transparent;
 	border-color:#0065FC;
 	color:#0065FC;
-	border-radius: 50px;
+	border-radius: 40px;
 	padding: 10px;
 	background-color:#DEEBFF;
 	margin-right: 8px;
@@ -210,7 +222,7 @@ button
 	border:transparent;
 	border-color:#0065FC;
 	color:#0065FC;
-	border-radius: 50px;
+	border-radius: 40px;
 	padding: 10px;
 	background-color:#DEEBFF;
 	margin-right: 8px;
@@ -252,7 +264,7 @@ button
 
 h1
 {
-	font-size: 20px;
+	font-size: 30px;
 }
 
 /*body*/
@@ -326,9 +338,14 @@ h1
 	display: flex;
 }
 
+.prix1
+{
+	margin:6px;
+}
+
 p
 {
-	margin: 0;
+	margin:0;
 }
 
 
@@ -337,6 +354,7 @@ h3
 	margin-block-end:0;
     margin-block-start:0;
     font-size: 16px;
+    margin:6px;
 }
 
 
@@ -345,7 +363,7 @@ h3
 	display: flex;
 	flex-direction: row;
 	color: #0065FC;
-	margin: 0;
+	margin:6px;
 }
 
 .greystar
@@ -427,6 +445,12 @@ h3
 	display: flex;
 	flex-direction: column;
 	margin-left: 10px;
+	justify-content: left;
+}
+
+.prix2
+{
+	margin-left: 5px;
 }
 
 
@@ -437,6 +461,7 @@ h3
 	color: #0065FC;
 	margin: 0;
 	margin-top: 30px;
+	margin-left: 5px;
 }
 
 
@@ -547,7 +572,7 @@ footer
 
 body
 {
-	font-family:Raleway-Regular,Arial,sans-serif;
+	font-family:Raleway,Arial,sans-serif;
 	margin: 0;
 	max-width: 1300px;
 	margin: 0;
