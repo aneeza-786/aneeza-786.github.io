@@ -1,7 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
 
-
+*{
+	padding:0;
+	margin:0;
+	border:none;
+	box-sizing: border-box;
+}
 
 /*header*/
 
@@ -67,7 +72,7 @@ width: 95px;}
 {
 	display: flex;
 	margin-right:0;
-	margin-left: 700px;
+	margin-left: 725px;
 }
 
 
@@ -284,6 +289,7 @@ h1
 
 /*Hébergements Marseille*/
 
+
 .allsection
 {
 	display: flex;
@@ -296,8 +302,8 @@ h1
 {
 	display: flex;
 	flex-wrap: wrap;
-	width: 786px;
-	background-color: #F2F2F2;
+	width: 900px;
+	background-color:#F2F2F2;
 	padding: 20px;
 	border-radius: 17px;
 	margin: 0;
@@ -488,7 +494,7 @@ h3
 .activites
 {
 	position: absolute;
-	margin-left: 25px;
+	margin-left: 7px;
 }
 
 .cases3
@@ -581,8 +587,8 @@ footer
 
 #blocpage
 {
-	max-width: 1230px;
 	margin: auto;
+	max-width:95%;
 }
 
 
