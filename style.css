@@ -1,5 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+h1
+{
+	display: none;
+}
+
 
 *{
 	padding:0;
@@ -14,30 +21,28 @@
 nav ul
 {
     list-style-type: none;
-    display:flex;
+    display: flex;
     padding: 0;
-}
-
-ul
-{
-	margin-block-start:0;
+    margin-block-start:0;
 	margin-block-end:0;
 }
 
-nav li
+
+.ancres
 {
-	margin-right: 20px;
+	display: flex;
 }
 
 
-li
-{
+a li
+{	margin-right: 20px;
 	border-top: transparent;
 	padding: 30px;
 	transition:all 400ms;
 
 }
-li:hover
+
+a li:hover
 {
 	color:#0065FC;
 	border-top: solid;
@@ -57,22 +62,16 @@ a
 }
 
 
-#logo
-{
-	margin: 0;
-}
-
-
-
 .Logohaut
-{height:50px;
-width: 95px;}
+{
+	height:50px;
+	width: 95px;
+}
 
 .headerNav
 {
 	display: flex;
 	margin-right:0;
-	margin-left: 725px;
 }
 
 
@@ -80,6 +79,7 @@ width: 95px;}
 {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -149,7 +149,7 @@ button
 .Filtres
 {
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: center;
 }
 
@@ -178,71 +178,65 @@ button
 	padding-right:8px;
 	padding-top:1px;
 	padding-bottom:1px;
-	transition:all 400ms;
+	transition:all 600ms;
 }
 
 .iconenom:hover
 {
 	background-color:#DEEBFF;
-	border:solid;
-	border-color:#0065FC;
-	border-width:2px;
+	color:#0065FC;
 }
 
 
 .iconemoney
 {
-	border:transparent;
-	border-color:#0065FC;
 	color:#0065FC;
-	border-radius:30px;
+	border-radius:100%;
 	padding:10px;
 	background-color:#DEEBFF;
-	margin-right:8px;
-	font-size:15px;
+	margin:-2px;
 }
 
 
 .iconeman
 {
-	border:transparent;
-	border-color:#0065FC;
 	color:#0065FC;
-	border-radius: 30px;
+	border-radius:100%;
 	padding-top:10px;
 	padding-bottom:10px;
 	padding-left:13px;
 	padding-right:13px;
 	background-color:#DEEBFF;
-	margin-right: 8px;
+	margin: -2px;
 }
 
 
 
 .iconecoeur
 {
-	border:transparent;
-	border-color:#0065FC;
 	color:#0065FC;
-	border-radius: 30px;
+	border-radius:100%;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 13px;
 	padding-left: 13px;
 	background-color:#DEEBFF;
-	margin-right: 8px;
+	margin:-2px;
 }
 
 
 .iconedog
 {
-	border:transparent;
-	border-color:#0065FC;
 	color:#0065FC;
-	border-radius: 30px;
+	border-radius:100%;
 	padding: 10px;
 	background-color:#DEEBFF;
-	margin-right: 8px;
+	margin:-2px;
+}
+
+.Filtres span
+{
+	margin-left: 10px;
 }
 
 
@@ -286,10 +280,6 @@ h1
 
 /*body*/
 
-
-/*Hébergements Marseille*/
-
-
 .allsection
 {
 	display: flex;
@@ -298,11 +288,17 @@ h1
 }
 
 
+/*Hébergements Marseille*/
+
+
+
 #section1
 {
 	display: flex;
 	flex-wrap: wrap;
-	width: 900px;
+	justify-content: space-between;
+	width:850px;
+	height:550px;
 	background-color:#F2F2F2;
 	padding: 20px;
 	border-radius: 17px;
@@ -395,17 +391,26 @@ h3
 	margin-top: 20px;
 	margin-left:20px;
 	margin-bottom:10px;
+	display: flex;
+	align-self: flex-end;
 }
 
 
 /*Les plus populaires*/
 
+.section1et2
+{
+	display: flex;
+}
+
+
+
 #section2
 {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column wrap;
 	background-color: #F2F2F2;
-	width:300px;
+	width:340px;
 	padding: 20px;
 	border-radius: 17px;
 }
@@ -416,6 +421,7 @@ h3
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 20px;
 }
 
 
@@ -487,14 +493,15 @@ h3
 
 #section3
 {
-	display: flex;
 	margin-top: 30px;
+	display: flex;
+	margin-left:-15px;
 }
 
 .activites
 {
 	position: absolute;
-	margin-left: 7px;
+	margin-left: 20px;
 }
 
 .cases3
@@ -525,8 +532,8 @@ h5
 
 .images3
 {
-	height: 300px;
-	width:260px;
+	height: 302px;
+	width:275px;
 	border-top-right-radius: 17px;
 	border-top-left-radius: 17px;
 	object-fit: cover;
@@ -534,8 +541,8 @@ h5
 
 .images3petit
 {
-	height: 94px;
-	width: 255px;
+	height: 95px;
+	width: 268px;
 	border-top-right-radius: 17px;
 	border-top-left-radius: 17px;
 	object-fit: cover;
@@ -562,8 +569,8 @@ footer
 {
 	display: flex;
 	background-color: #F2F2F2;
-	height: 185px;
-
+	height:185px;
+	justify-content: space-around;
 }
 
 .footertitle
@@ -578,17 +585,16 @@ footer
 {
 	display: flex;
 	flex-direction: column;
-	margin-right:160px;
-	margin-left: 50px;
 	font-weight: lighter;
-	margin-top: 40px;
+	margin-top: 3%;
+	margin-right: 13%;
 }
 
 
 #blocpage
 {
-	margin: auto;
-	max-width:95%;
+	margin:0 auto;
+	max-width:1240px;
 }
 
 
@@ -597,5 +603,91 @@ footer
 body
 {
 	font-family:Raleway,Arial,sans-serif;
+}
+
+@media screen and (max-width: 1270px)
+{
+	.imgpetit
+	{
+		display: flex;
+	}
+
+	.section1et2
+	{
+		display: flex;
+		flex-wrap: wrap-reverse;
+	}
+
+	#section2
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color:#F2F2F2;
+		padding: 20px;
+		border-radius: 17px;
+		margin: 0;
+		width:100%;
+	}
+
+	.cases2
+	{
+		background-color: white;
+		border-radius: 17px;
+		padding: 1px;
+		border:solid;
+		border-color: white;
+		margin: 10px;
+		margin-top: 35px;
+		height: auto;
+		width: auto;
+		font-size: 12px;
+		box-shadow: 0 0px 15px rgba(0, 0, 0, .2);
+	}
+
+	#section3
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	footer
+	{
+		height: auto;
+	}
+}
+
+
+
+@media screen and (max-width: 925px)
+{
+
+	#section1
+	{	display: flex;
+		flex-wrap: wrap;
+		height: auto;
+		width: auto;
+	}
+	
+	.cases1
+	{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.images1
+	{
+		border-top-left-radius: 17px;
+		border-top-right-radius: 17px;
+		height:110px;
+		width: 230px;
+	}
+
+	footer
+	{
+		display: flex;
+		flex-direction: column;
+		padding-left: 40px;
 }
 
