@@ -280,6 +280,9 @@ h1
 
 /*body*/
 
+
+
+
 .allsection
 {
 	display: flex;
@@ -501,7 +504,7 @@ h3
 .activites
 {
 	position: absolute;
-	margin-left: 20px;
+	margin-left: 7px;
 }
 
 .cases3
