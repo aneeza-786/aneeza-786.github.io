@@ -435,6 +435,11 @@ h3
 	margin-bottom: 20px;
 }
 
+.iconefleche
+{
+	margin-bottom: 18px;
+}
+
 .cases2
 {
 	display: flex;
@@ -675,3 +680,10 @@ body
 }
 
 
+@media screen and (max-width:612px)
+{
+	#section1
+	{	display: flex;
+		flex-direction:column;
+	}
+}
