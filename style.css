@@ -162,6 +162,7 @@ button
 	border-color: #F2F2F2;
 	border-radius: 70px;
 	align-items:center;
+	justify-content: center;
 	font-weight:bold;
 	border-left:none;
 	padding-right:8px;
@@ -227,7 +228,6 @@ button
 {
 	margin-left: 10px;
 }
-
 
 /*info*/
 
