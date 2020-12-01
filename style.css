@@ -11,13 +11,26 @@
 
 /*header*/
 
-nav
+.containerheader
 {
-    list-style-type: none;
-    display: flex;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
-nav a 
+.menu
+{
+	display: flex;
+	align-items: center;
+}
+
+.ancres
+{
+	display: flex;
+}
+
+.ancreseule
 {
 	margin-right: 20px;
 	padding: 30px;
@@ -25,7 +38,7 @@ nav a
 }
 
 
-nav a:hover
+.ancreseule:hover
 {
 	color:#0065FC;
 	border-top: solid;
@@ -38,7 +51,8 @@ a
 	color: black;
 }
 
-nav p
+
+.inscrire
 {
 	font-weight: bold;
 	color:#0065FC;
@@ -50,35 +64,6 @@ nav p
 {
 	color: white;
 }
-
-
-#logo
-{
-	margin: 0;
-}
-
-
-
-.Logohaut
-{height:50px;
-width: 95px;}
-
-.headerNav
-{
-	display: flex;
-	margin-right:0;
-	align-items: center;
-}
-
-
-.containerheader
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-
 
 
 .recherchebarre
@@ -133,6 +118,11 @@ button
 	padding-right: 20px;
 	padding-left: 20px;
 	font-weight: bold;
+}
+
+.iconesearch
+{
+	display: none;
 }
 
 .Filtres
@@ -262,7 +252,7 @@ button
 }
 
 
-h1
+h2
 {
 	font-size: 30px;
 }
@@ -609,6 +599,7 @@ body
 	{
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.imgpetit
@@ -630,6 +621,19 @@ body
 	#section2
 	{
 		flex: 1;
+		margin: 30px;
+	}
+
+	#section1
+	{	
+		width: auto;
+		justify-content: center;
+		background-color:white;
+	}
+
+	.afficherplus
+	{
+		display: none;
 	}
 }
 
@@ -637,16 +641,29 @@ body
 
 @media screen and (max-width: 925px)
 {
-	nav p
+	.containerheader
 	{
 		display: flex;
-		order:1;
+		flex-wrap: wrap;
+		width: 100%;
 	}
 
-	nav a 
+	.logo
 	{
-		display: flex;
-		order: 2
+		order: 3;
+		width: 50%;
+	}
+
+	.ancreseule
+	{
+		order:1;
+		width: 50%;
+	}
+
+	.inscrire
+	{	
+		order:2;
+		width: 50%;
 	}
 
 	#section1
@@ -654,6 +671,7 @@ body
 		flex-wrap: wrap;
 		height: auto;
 		width: auto;
+		margin: 0 auto;
 	}
 	
 	.cases1
@@ -682,9 +700,43 @@ body
 
 
 @media screen and (max-width:612px)
-{
+{	
+
+	button
+	{
+		display: none;
+	}
+
+	.iconesearch
+	{
+		display: flex;
+		color: white;
+		background-color:#0065FC;
+		height: 42px;
+		width: 25px;
+		align-items: center;
+	    justify-content: center;
+	    padding:20px;
+	}
+
+
 	#section1
 	{	display: flex;
 		flex-direction:column;
+	}
+
+	.hebergements
+	{
+		position: static;
+	}
+
+	.images1
+	{
+		width:245px;
+	}
+
+	.afficherplus
+	{
+		display:flex;
 	}
 }
