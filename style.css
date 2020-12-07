@@ -47,7 +47,7 @@
 {
 	margin-right: 20px;
 	width: 50%;
-	padding: 30px;
+	padding: 27px;
 	text-align: center;
 	transition:all 200ms;
 }
@@ -75,6 +75,13 @@ a
 	margin-left: 10px;
 	padding: 30px;
 }
+
+.grostitre
+{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
 
 .button
 {
@@ -140,6 +147,15 @@ button
 {
 	display: none;
 }
+
+
+.titrefiltre
+{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
 
 .Filtres
 {
@@ -612,6 +628,7 @@ body
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		width:auto;
 	}
 
 	.imgpetit
@@ -622,15 +639,13 @@ body
 		justify-content: center;
 	}
 
-	.images3petit
+	.images3petit,.images3
 	{
 		height: 210px;
+		width: 255px;
+		object-fit: cover;
 	}
 
-	.images3
-	{
-		height: 210px;
-	}
 
 	footer
 	{
@@ -646,7 +661,15 @@ body
 	#section2
 	{
 		flex: 1;
-		margin: 30px;
+		width:100%;
+		border-radius:0;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.cases2
+	{
+		margin-left: 10px;
 	}
 
 	#section1
@@ -701,6 +724,7 @@ body
 
 	.ancreseule:hover
 	{	
+		color:#0065FC;
 		border-top: none;
 		border-bottom:solid;
 		border-color: #0065FC;
@@ -711,13 +735,11 @@ body
 		flex-wrap: wrap;
 		height: auto;
 		width: auto;
-		margin: 0 auto;
 	}
 	
 	.cases1
 	{
 		display: flex;
-		align-items: center;
 		flex-direction: column;
 	}
 
@@ -741,22 +763,6 @@ body
 
 @media screen and (max-width:612px)
 {
-	/*header
-	{
-		width: 96%;
-		margin: 0 auto;
-	}
-
-	.ancres
-	{
-		width: auto;
-	}*/
-
-	.grostitre
-	{
-		margin-top: 20px;
-		margin-bottom: 10px;
-	}
 
 	button
 	{
@@ -773,6 +779,8 @@ body
 		align-items: center;
 	    justify-content: center;
 	    padding:20px;
+	    border-radius: 13px;
+	    margin-left:-8px;
 	}
 
 	.iconeinput
@@ -783,6 +791,7 @@ body
 	#section1
 	{	display: flex;
 		flex-direction:column;
+		margin: 0;
 	}
 
 	.hebergements
@@ -792,12 +801,31 @@ body
 
 	.images1
 	{
-		width:245px;
+		width:100%;
+		height:200px;
 	}
 
 	.afficherplus
 	{
 		display:flex;
+		place-self:flex-start;
+	}
+
+	#section3
+	{
+		margin: 0;
+	}
+
+	.activites
+	{
+		margin-right: 11rem;
+	    position: static;
+	    margin-left: 0;
+	}
+
+	.images3,.images3petit
+	{
+		width:25em;
 	}
 }
 
@@ -809,10 +837,4 @@ body
 		margin-bottom: 30px;
 	}
 
-
-	.filtres2
-	{
-		position: absolute;
-		margin-bottom: 12rem;
-	}
 }
