@@ -56,6 +56,7 @@
 .ancreseule:hover
 {
 	color:#0065FC;
+	font-weight: bold;
 	border-top: solid;
 	border-color:#0065FC;
 }
@@ -177,7 +178,7 @@ button
 .iconenom
 {
 	display: flex;
-	margin-right: 30px;
+	margin-right: 50px;
 	margin-top: 20px;
 	border: solid;
 	border-width:2px;
@@ -317,8 +318,6 @@ button
 
 .hebergements
 {
-	margin-block-end:0;
-	margin-block-start:0;
 	position: absolute;
 	margin-left: 20px;
 	font-size: 20px;
@@ -359,11 +358,13 @@ button
 .txt1
 {
 	display: flex;
+	flex-direction: column;
 }
 
 .prix1
 {
 	margin:6px;
+	margin-top: 0px;
 }
 
 p
@@ -374,8 +375,6 @@ p
 
 h3
 {
-	margin-block-end:0;
-    margin-block-start:0;
     font-size: 16px;
     margin:6px;
 }
@@ -537,13 +536,6 @@ h3
 }
 
 
-h5
-{
-	margin-block-start:0;
-	margin-block-end:0;
-}
-
-
 .images3
 {
 	height: 302px;
@@ -579,30 +571,42 @@ h5
 
 /*footer*/
 
+.totalfooter
+{	
+	max-width:1200px;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-bottom: 35px;
+	display: flex;
+	justify-content:flex-start;
+}
+
 footer
 {
-	display: flex;
 	background-color: #F2F2F2;
-	height:185px;
-	justify-content: space-around;
 }
-
-.footertitle
-{
-	font-weight: bold;
-	display: flex;
-}
-
-
 
 .footertxt
 {
 	display: flex;
 	flex-direction: column;
-	font-weight: lighter;
-	margin-top: 3%;
-	margin-right: 13%;
-	margin-bottom: 20px;
+	margin-right: 8em;
+}
+
+.footertitle
+{
+	padding-bottom: 5px;
+}
+
+footer a
+{
+	padding-bottom:5px;
+}
+
+footer a:hover
+{
+	color: #0065FC;
+	font-weight: bold;
 }
 
 
@@ -611,9 +615,7 @@ footer
 	margin:0 auto;
 	max-width:1240px;
 }
-
-
-
+ 
 
 body
 {
@@ -622,6 +624,14 @@ body
 
 @media screen and (max-width: 1270px)
 {
+
+
+	.logo,.grostitre,header p,.recherchebarre,.titrefiltre,.info
+	{
+		padding-left:20px;
+	}
+
+
 
 	#section3
 	{
@@ -650,6 +660,7 @@ body
 	footer
 	{
 		height: auto;
+		padding-left: 2rem;
 	}
 
 	.section1et2
@@ -725,6 +736,7 @@ body
 	.ancreseule:hover
 	{	
 		color:#0065FC;
+		font-weight: bold;
 		border-top: none;
 		border-bottom:solid;
 		border-color: #0065FC;
@@ -751,18 +763,30 @@ body
 		width: 230px;
 	}
 
-	
-
-	footer
+	.totalfooter
 	{
 		display: flex;
 		flex-direction: column;
-		padding-left: 40px;
-}
+		padding-left:1em;
+	}
+
+	.footertxt
+	{
+		margin-bottom: 20px;
+	}
 
 
 @media screen and (max-width:612px)
 {
+	.logoinscrire,.grostitre,header p,.recherchebarre,.titrefiltre,.info
+	{
+		padding-left:30px;
+	}
+
+	.inscrire,.grostitre
+	{
+		padding-right:21px;
+	}
 
 	button
 	{
@@ -788,6 +812,12 @@ body
 		margin-bottom: 30px;
 	}
 
+
+	.populaires
+	{
+		margin-left: 12px;
+	}
+
 	#section1
 	{	display: flex;
 		flex-direction:column;
@@ -797,6 +827,7 @@ body
 	.hebergements
 	{
 		position: static;
+		margin-left: 15px;
 	}
 
 	.images1
@@ -827,14 +858,16 @@ body
 	{
 		width:25em;
 	}
+
 }
 
 
 @media screen and (max-width: 390px)
+
 {
 	.iconeinput
 	{
 		margin-bottom: 30px;
 	}
-
 }
+
