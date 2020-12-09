@@ -328,8 +328,6 @@ button
 	background-color: white;
 	border-radius: 17px;
 	padding: 1px;
-	border:solid;
-	border-color: white;
 	margin: 10px;
 	margin-top: 35px;
 	height: auto;
@@ -353,6 +351,7 @@ button
 	border-top-right-radius: 17px;
 	border-top-left-radius: 17px;
 	object-fit: cover;
+	padding:3px;
 }
 
 .txt1
@@ -451,8 +450,6 @@ h3
 	background-color: white;
 	border-radius: 17px;
 	padding: 1px;
-	border:solid;
-	border-color: white;
 	font-size: 12px;
 	margin-bottom: 10px;
 	margin-top: 10px;
@@ -475,6 +472,7 @@ h3
 	border-top-left-radius: 17px;
 	display: flex;
 	object-fit: cover;
+	padding: 3px;
 }
 
 .txt2
@@ -573,12 +571,12 @@ h3
 
 .totalfooter
 {	
-	max-width:1200px;
+	max-width:1240px;
 	margin: 0 auto;
 	padding-top: 40px;
 	padding-bottom: 35px;
 	display: flex;
-	justify-content:flex-start;
+	justify-content:space-between;
 }
 
 footer
@@ -590,7 +588,7 @@ footer
 {
 	display: flex;
 	flex-direction: column;
-	margin-right: 8em;
+	width:30%;
 }
 
 .footertitle
@@ -626,7 +624,7 @@ body
 {
 
 
-	.logo,.grostitre,header p,.recherchebarre,.titrefiltre,.info
+	.grostitre,header p,.recherchebarre,.titrefiltre,.info
 	{
 		padding-left:20px;
 	}
@@ -774,7 +772,7 @@ body
 	{
 		margin-bottom: 20px;
 	}
-
+}
 
 @media screen and (max-width:612px)
 {
@@ -865,9 +863,10 @@ body
 @media screen and (max-width: 390px)
 
 {
-	.iconeinput
+	.iconeinput 
 	{
-		margin-bottom: 30px;
+		margin-bottom :30px;
 	}
+
 }
 
