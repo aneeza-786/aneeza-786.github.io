@@ -659,6 +659,7 @@ body
 	{
 		height: auto;
 		padding-left: 2rem;
+		white-space: nowrap;
 	}
 
 	.section1et2
