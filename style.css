@@ -11,6 +11,8 @@
 
 /*header*/
 
+/*nav*/
+
 .containerheadermobile
 {
 	display: none;
@@ -21,6 +23,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	width: auto;
 }
 
 .containerheader
@@ -46,7 +49,6 @@
 .ancreseule
 {
 	margin-right: 20px;
-	width: 50%;
 	padding: 27px;
 	text-align: center;
 	transition:all 200ms;
@@ -76,6 +78,8 @@ a
 	margin-left: 10px;
 	padding: 30px;
 }
+
+/*nav*/
 
 .grostitre
 {
@@ -178,7 +182,7 @@ button
 .iconenom
 {
 	display: flex;
-	margin-right: 50px;
+	margin-right:25px;
 	margin-top: 20px;
 	border: solid;
 	border-width:2px;
@@ -608,6 +612,8 @@ footer a:hover
 }
 
 
+/*pageentiere*/
+
 #blocpage
 {
 	margin:0 auto;
@@ -620,9 +626,12 @@ body
 	font-family:Raleway,Arial,sans-serif;
 }
 
+
+
+
 @media screen and (max-width: 1270px)
 {
-
+	/*header*/
 
 	.grostitre,header p,.recherchebarre,.titrefiltre,.info
 	{
@@ -630,6 +639,37 @@ body
 	}
 
 
+	#section1
+	{	
+		width: auto;
+		justify-content: center;
+		background-color:white;
+	}
+
+	.afficherplus
+	{
+		display: none;
+	}
+
+	.section1et2
+	{
+		display: flex;
+		flex-wrap: wrap-reverse;
+	}
+
+	#section2
+	{
+		flex: 1;
+		width:100%;
+		border-radius:0;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.cases2
+	{
+		margin-left: 10px;
+	}
 
 	#section3
 	{
@@ -660,39 +700,7 @@ body
 		height: auto;
 		padding-left: 2rem;
 		white-space: nowrap;
-	}
-
-	.section1et2
-	{
-		display: flex;
-		flex-wrap: wrap-reverse;
-	}
-
-	#section2
-	{
-		flex: 1;
-		width:100%;
-		border-radius:0;
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-
-	.cases2
-	{
-		margin-left: 10px;
-	}
-
-	#section1
-	{	
-		width: auto;
-		justify-content: center;
-		background-color:white;
-	}
-
-	.afficherplus
-	{
-		display: none;
-	}
+	}	
 }
 
 
@@ -741,6 +749,11 @@ body
 		border-color: #0065FC;
 	}
 
+	.iconenom
+	{
+		margin-right:10px;
+	}
+
 	#section1
 	{	display: flex;
 		flex-wrap: wrap;
@@ -766,7 +779,6 @@ body
 	{
 		display: flex;
 		flex-direction: column;
-		padding-left:1em;
 	}
 
 	.footertxt
@@ -785,6 +797,14 @@ body
 	.inscrire,.grostitre
 	{
 		padding-right:21px;
+	}
+
+	.ancreseule
+	{
+		padding:0;
+		padding-bottom: 20px;
+		padding-left: 15px;
+		padding-top: 20px;
 	}
 
 	button
@@ -832,13 +852,14 @@ body
 	.images1
 	{
 		width:100%;
-		height:200px;
+		height:130px;
 	}
 
 	.afficherplus
 	{
 		display:flex;
 		place-self:flex-start;
+		margin-left: 0;
 	}
 
 	#section3
@@ -848,14 +869,15 @@ body
 
 	.activites
 	{
-		margin-right: 11rem;
+		margin-right:1em;
 	    position: static;
 	    margin-left: 0;
 	}
 
 	.images3,.images3petit
 	{
-		width:25em;
+		width:98;
+		height:130px;
 	}
 
 }
@@ -868,6 +890,7 @@ body
 	{
 		margin-bottom :30px;
 	}
+
 
 }
 
