@@ -88,9 +88,10 @@ a
 }
 
 
-.button
+button
 {
 	color: white;
+	cursor: grab;
 }
 
 
@@ -831,7 +832,6 @@ body
 		margin-bottom: 30px;
 	}
 
-
 	.populaires
 	{
 		margin-left: 12px;
@@ -869,28 +869,31 @@ body
 
 	.activites
 	{
-		margin-right:1em;
+		margin-right:3em;
 	    position: static;
 	    margin-left: 0;
 	}
 
 	.images3,.images3petit
 	{
-		width:98;
+		width:307px;
 		height:130px;
 	}
 
 }
 
 
-@media screen and (max-width: 390px)
-
+@media screen and (max-width:330px)
 {
-	.iconeinput 
+	.images3, .images3petit
 	{
-		margin-bottom :30px;
+		width: 260px;
+		height:130px;
 	}
 
-
+	.activites
+	{
+		margin-right: 1em;
+	}
 }
 
