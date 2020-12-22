@@ -634,7 +634,8 @@ body
 {
 	/*header*/
 
-	.grostitre,header p,.recherchebarre,.titrefiltre,.info
+
+	.logo,.grostitre,header p,.recherchebarre,.titrefiltre,.info
 	{
 		padding-left:20px;
 	}
@@ -790,6 +791,11 @@ body
 
 @media screen and (max-width:612px)
 {
+	.logo
+	{
+		padding: 0;
+	}
+
 	.logoinscrire,.grostitre,header p,.recherchebarre,.titrefiltre,.info
 	{
 		padding-left:30px;
